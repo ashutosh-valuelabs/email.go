@@ -2,6 +2,7 @@ package main
 import(
 	"gopkg.in/gomail.v2"
 	"fmt"
+	"reflect"
 )
 func main(){
 	mail:=gomail.NewMessage()
@@ -9,6 +10,7 @@ func main(){
 	mail.SetHeader("To", "/*receiver's address*/")
 	mail.SetHeader("Subject", "/*type your subject */")
 	mail.SetBody("text/plain", "/*Type your message*/")
+	fmt.println(reflect.TypeOf(mail))
 	dialer:=gomail.NewPlainDialer("smtp.gmail.com", 587, "/*sender's email address*/", "/*type your password*/")
 	if err:=dialer.DialAndSend(mail);err!=nil{
 		panic(err)
