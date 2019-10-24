@@ -13,5 +13,6 @@ func main(){
 	if err:=dialer.DialAndSend(mail);err!=nil{
 		panic(err)
 	}
+	fmt.Println("Check Email")
 	fmt.Println("Email sent successfully")
 }
