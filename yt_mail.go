@@ -14,4 +14,5 @@ func main(){
 		panic(err)
 	}
 	fmt.Println("Email sent successfully")
+	fmt.Println("i gottcha")
 }
