@@ -16,4 +16,5 @@ func main(){
 	fmt.Println("Check Email")
 	fmt.Println("Email sent successfully")
 	fmt.Println("i gottcha")
+	fmt.Println("Email sent properly")
 }
