@@ -6,6 +6,7 @@ import(
 func main(){
 	mail:=gomail.NewMessage()
 	mail.SetHeader("From", "/*sender's address*/")
+	mail.SetHeader("Reciever", "/*sender's address*/")
 	mail.SetHeader("To", "/*receiver's address*/")
 	mail.SetHeader("Subject", "/*type your subject */")
 	mail.SetBody("text/plain", "/*Type your message*/")
